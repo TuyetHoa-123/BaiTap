@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root{
+    --border:#e0e0e0;
+    --color:#6b6b6b;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+}
+
+/* table & moblie*/
+@media (max-width:63.9375em){
+    .register{
+        width: 80%;
+    }
+
+    .duration{
+        width: 98%;
+    }
+
+    .iconCopy, .iconDelete{
+        width: 100%;
+        padding-top: 4px;
+    }
+    .title .heading, .title .btn-insert button, .setting i, .setting p{
+        font-size: 1em !important;
+    }
+    .titlelist{
+        font-size: 1.2em !important;
+    }
+}
+
+
+/*Mobile*/
+@media (max-width:46.1875em)
+{
+    table{
+        font-size: 0.9em;
+    }
+
+    .search input{
+        width: 150px;
+        height: 25px;
+        margin-right: 0 !important;
+    }
+    .search i.fa-search{
+        right: 25px;
+    }
+    .XML button{
+        padding: 5px 14px;
+        font-size: 0.8em;
+        margin-right: 13px !important;
+    }
+
+    .pagination-left, .pagination-right, .pagination-child {
+        width: 25px !important;
+    }
+
+
+    /* đăng ky*/
+    .dateAfter,
+    .inp-dateAfter {
+      flex: 25% 0 0;
+      margin-left: auto; /* Đẩy sang lề phải */
+    }
+
+    .period{
+        width: 80% !important;
+        margin-left: 10%;
+    }
+
+    .duration button {
+        float: right;
+        margin-right: 11%;
+    }
+
+    .duration-inpdate {
+        height: 140px;
+    }
+    
+}

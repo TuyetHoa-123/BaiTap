@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root{
+    --border:#e0e0e0;
+    --color:#6b6b6b;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+}
+
+.title{
+    height: 80px;
+    color: var(--color);
+}
+
+.title .heading, .title .btn-insert{
+    float: left;
+    padding-left: 5%;
+}
+
+.title .heading{
+    margin-top: 25px;
+    font-size: 1.4em;
+}
+
+.title .btn-insert button{
+    border: none;
+    background-color: #4ba84b;
+    color: #fff;
+    font-size: 1.4em;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.title .btn-insert{
+    border-left: 1px solid var(--border);
+    padding-left: 2%;
+    margin-left: 1.6%;
+    margin-top: 20px;
+}
+
+.btn-insert-icon{
+    float: left;
+    background-color: #fff;
+    color: #4ba84b;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+
+.btn-insert-icon i{
+    padding: 0 4px;
+    font-size: 8px;
+}
+
+.setting i, .setting p{
+    float: right;
+    font-size: 1.4em;
+    margin-top: 30px;
+}
+
+.setting p{
+    margin-right: 5%;
+    margin-left: 10px;
+    color: var(--color);
+}
+
+.setting i{
+    color: #5f5555;
+}
+
+.container{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.Content {
+    border-bottom: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    padding-bottom: 20px;
+}
+
+.XML, .search{
+    float: right;
+    margin: 14px 0;
+    font-size: 1.4em;
+}
+
+.search{
+    margin-right: 5%;
+    position: relative;
+}
+
+.search input[type="search"]{
+    padding-right: 30px;
+}
+
+.search i.fa-search{
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--color);
+}
+
+.XML button{
+    background-color: #4472c4;
+    color: #fff;
+    padding: 5px 20px;
+    border: none;
+    font-size: 1em;
+    margin-right: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search input{
+    width: 250px;
+    padding: 4px 5px;
+    margin-right: 40px;
+}
+
+table{
+    color: var(--color);
+    border-collapse: collapse;
+    width: 94%;
+    margin-left: 3%;
+    font-size: 1.4em;
+}
+
+.titlelist{
+    background-color: #f2f2f2;
+    font-size: 1.6em;
+    border: 1px solid var(--border);
+    padding: 10px 50px;
+}
+
+table tr th, table tr td{
+    border: 1px solid #e0e0e0;
+    padding: 5px 0;
+    }
+
+table tr td{
+    text-align: center;
+}
+table tr th{
+    background-color: #f2f2f2;
+}
+.iconEdit{
+    color: #ff9d3d;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.iconCopy{
+    color: #9e9d9d;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.iconDelete{
+    color: #f2364a;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.iconDeleteBtn{
+    border: none;
+    background-color: #fff;
+}
+
+
+table {
+    margin-left: 10px;
+    margin-right: 10px;
+    table-layout: fixed;
+    width: 98%;
+}
+
+th, td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+} 
+/* #myTable {
+    margin-left: 10px;
+    margin-right: 10px;
+    table-layout: fixed;
+    width: 98%;
+}
+
+th, td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+}
+
+td:hover::after {
+    content: attr(data-full);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    white-space: normal;
+    z-index: 1;
+} */
+
+.pagination-left, .pagination-right, .pagination-child{
+    float: right;
+    margin-top: 20px;
+    margin-right: 6px;
+    font-size: 1.4em;
+    width: 35px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #101112;
+    font-size: 1.2em;
+}
+
+.pagination-left, .pagination-child,.pagination-right{
+    background-color: #d7e1f2;
+}
+
+
+.final{
+    margin-right: 7%;
+}
+
+.pagination-child {
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination-child:hover {
+    background-color: #8daada;
+    color: #000;
+}
+
+.pagination-child.active {
+    background-color: #8daada;
+    color: #000;
+    cursor: default;  
+}
+
+
+.pagination-left.first-page {
+    background-color: #ccc;
+}
+.pagination-right.last-page{
+    background-color: #ccc;
+}
+/* Đăng ký*/
+.register{
+    width: 50%;
+    margin: auto;
+}
+
+.heading-title{
+    margin-top: 20px;
+    font-size: 1.4em;
+    color: var(--color);
+    padding-left: 4%;
+}
+
+.main{
+    width: 90%;
+    margin-top: 20px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 15px 0;
+    padding-left: 4%;
+    padding-right: 3%;
+}
+
+.form-row label{
+    font-size: 1.4em;
+    height: 20px;
+    color: var(--color);
+}
+
+.form-row input{
+    width: 98%;
+    height: 30px;
+    margin: 10px 0;
+    padding-left: 5px;
+    color: var(--color);
+}
+.inp-dateFirst, .inp-dateAfter{
+    color: #000 !important;
+}
+/* CSS cho input type radio trong .form-row */
+.form-row input[type="radio"] {
+    width: auto;
+    height: auto; 
+    margin-bottom: 20px;
+    margin-right: 5px;
+}
+/* Màu viền khi được chọn */
+input[type="radio"]:checked {
+    background-color: #000000; 
+    border-color: #ffffff;
+  }
+.form-row input[type="date"]
+{
+    width: 35%;
+}
+
+/* Chỉnh sửa chiều rộng của .duration và .duration-inpdate để tránh việc bể layout */
+.duration-inpdate {
+    border-bottom: 1px solid var(--border);
+    width: 98%; 
+    margin-left: 1%;
+}
+
+.duration {
+    border: 1px solid var(--border);
+    width: 75%; 
+    margin-top: 10px;
+}
+
+.duration input[type="date"]{
+    margin-left: 2%;
+}
+
+.duration button{
+    border: none;
+    background-color: #d7e1f2;
+    padding: 6px 14px;
+    margin-left: 2%;
+}
+.duration-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Canh giữa ngang và đẩy các phần tử về hai bên */
+    font-size: 1.4em;
+    padding: 15px 0;
+  }
+  
+  .dateFirst {
+    margin-left: 4%;
+    flex: 0 0 30%;
+  }
+  
+  .dateAfter,
+  .inp-dateAfter {
+    flex: 22% 0 0;
+    margin-left: auto; /* Đẩy sang lề phải */
+  }
+  
+  
+  
+  .duration-date p {
+    flex: 0 0 9%; /* Kích thước cố định */
+    text-align: center; /* Canh giữa ngang */
+  }
+  
+  /* Đảm bảo các iconDelete sẽ luôn luôn nằm ở bên phải */
+  .duration-date i {
+    margin-right: 15%;
+  }
+  
+
+.Registerbtn{
+    float: right;
+}
+
+.btnCancel, .btnSave{
+    padding: 0 8px;
+    margin-top: 15px;
+    border: none;
+    font-size: 1.4em;
+    height: 35px;
+}
+
+.Registerbtn .btnSave{
+    margin-right: 80px;
+    margin-left: 5px;
+    background-color: #1b91ad;
+    color: white;
+    cursor: pointer;
+}
+
+.Registerbtn .btnCancel{
+    background-color: #626262;
+    color: white;
+    cursor: pointer;
+}
