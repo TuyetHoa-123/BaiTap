@@ -17,7 +17,7 @@ function getSearchQuery($searchKeyword) {
     return $baseQuery;
 }
 
-//TuyetHoa
+//TuyetHoa123
 include("class/class.php");
 $p = new user();
 // Xử lý xóa người dùng
