@@ -17,6 +17,7 @@ function getSearchQuery($searchKeyword) {
     return $baseQuery;
 }
 
+//Test commit
 include("class/class.php");
 $p = new user();
 // Xử lý xóa người dùng
